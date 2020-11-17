@@ -35,3 +35,7 @@ If you want to change the download path for the Script... Open the `Download_Pat
 ```text
 C:\Users\Person\Downloads
 ```
+
+## The Full Install Process
+
+![Full Install and Run](.resources/Full-Install.gif)
