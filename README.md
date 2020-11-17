@@ -15,7 +15,8 @@ Easy Youtube-DL GUI with Autohotkey. Just download and run the AHK Script.
 ## Usage
 1. Make sure you have AutoHotkey Installed on your system. If you dont, [Download it here](https://www.autohotkey.com/download/)
 
-2. Double Click the `Easy-YoutubeDL.ahk` file to run the script.
+2. Double Click the `Easy-YoutubeDL.ahk` file to run the script.\
+    ![Run Script](.resources/AHK-File.jpg)
 
 3. The Script is now running (You may get a notifcation saying so). Now that it is running, you can use the keyboard shortcuts:
     - `Win + Alt + Y` Opens the YoutubeDL Download GUI. Easy to use. You can paste multiple URLs so that it automatically starts the next download after the previous.
