@@ -84,9 +84,14 @@ DownloadYoutubeVideoGUI:
 	
 		Progress, B M T X100 Y10 CW000000 W80
 		Progress, 75
-	
+
+        ;; Get Download Path
+        FileReadLine, Download_Path, ./Download_Path.txt, 1
+        msgbox, %Download_Path%
+
         ;; Run YoutubeDL
-		commandStr := "youtube-dl.exe --no-mtime -o ""./Downloaded/`%(title)s.`%(ext)s"" --no-mtime -f ""bestvideo[height<=" DYVheight "]+bestaudio/best[height<=" DYVheight "]""  " Link " && exit || exit"
+		commandStr := "youtube-dl.exe --no-mtime -o """ Download_Path "\`%(title)s.`%(ext)s"" --no-mtime -f ""bestvideo[height<=" DYVheight "]+bestaudio/best[height<=" DYVheight "]""  " Link " && exit || exit"
+        msgbox, %commandStr%
 		RunWait, %comspec% /c %commandStr% ,,Hide
 		if (ErrorLevel == 0){
 			TrayTip Video Downloaded ✔️, The video has been downloaded from:`n%Link%`nat %DYVquality% ,,33
