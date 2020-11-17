@@ -6,6 +6,7 @@ Easy Youtube-DL GUI with Autohotkey. Just download and run the AHK Script.
 2. Make sure you have FFMPEG installed on your system
    1. [Download it here](https://www.gyan.dev/ffmpeg/builds/)
    2. Add ffmpeg `bin` folder to you path
+   3. ─ OR ─ Try running `choco install ffmpeg` in an administrator command prompt
 3. Download the files for this repo.
    - A | Use `git clone`
        ```bash
